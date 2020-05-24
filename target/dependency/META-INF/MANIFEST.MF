@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.1
+Built-By: jonat
+Build-Jdk: 11.0.6
+Implementation-Title: pseudo-api
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: de.uniklinik.medic.pseudo
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/pseudo-api
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: de.uniklinik.medic.pseudo.Application
+Spring-Boot-Version: 2.1.3.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+

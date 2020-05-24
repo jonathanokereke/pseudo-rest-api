@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "session.create",
+      "type": "java.lang.String",
+      "description": "Description for session.create."
+  }
+] }

@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  #Pseudo Service
+  pseudo-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082 # Forward the exposed port 8021 on the container to port 8020 on the host machine
+    depends_on:
+      - pseudo-db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://pseudo-db:3306/pseudo_db?verifyServerCertificate=false&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=joewie007
+  #Database service
+  pseudo-db:
+    image: mysql:8.0
+    ports:
+    - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=joewie007
+      - MYSQL_USER=root
+      - MYSQL_DATABASE=pseudo_db
+      - MYSQL_PASSWORD=joewie007
+      - MYSQL_ONETIME_PASSWORD=true
+
+    volumes:
+      - /var/lib/mysql
