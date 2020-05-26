@@ -17,6 +17,18 @@ Prerequisite: Java 11, Maven 3.6, Docker 18
     
     By default the Mainzelliste server runs at port <code>8080</code>
     
+  - Setup MySQL Server (Local instance)
+  
+        Host:       localhost
+        Port:       3306
+        User:       root
+        Password:   medic2020
+        Database:   pseudo_db
+        url:        jdbc:mysql://localhost:3306
+        
+    Start the MySQL Server with the above credential.
+        
+    
   - Run the jar (Java Archived) file
   
     <code>java -jar target/pseudo-api-1.0-SNAPSHOT.jar</code>
