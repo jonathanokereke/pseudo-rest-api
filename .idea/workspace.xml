@@ -188,7 +188,7 @@
       <workItem from="1590072822805" duration="6240000" />
       <workItem from="1590122238916" duration="12320000" />
       <workItem from="1590176934466" duration="51769000" />
-      <workItem from="1590382271653" duration="34776000" />
+      <workItem from="1590382271653" duration="36229000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuilt project for standalone deployment">
       <created>1590490734137</created>
@@ -228,10 +228,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="361" y="0" key="#build/Dockerfile/0.0.1280.720@0.0.1280.720" timestamp="1590148052037" />
-    <state x="2509" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590499020815">
+    <state x="2509" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590500568007">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state x="2509" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1590499020815" />
+    <state x="2509" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1590500568007" />
     <state x="191" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1590383305999" />
     <state x="398" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590310067611">
       <screen x="0" y="0" width="1280" height="720" />
