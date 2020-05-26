@@ -18,7 +18,7 @@ Prerequisite: Java 11, Maven 3.6, Docker 18
         docker-compose up
     
     
-   By default the Mainzelliste server runs at port <code>8080</code>
+   By default, the Mainzelliste server runs at port <code>8080</code>
     
   - Setup MySQL Server (Local instance)
   
@@ -37,7 +37,7 @@ Prerequisite: Java 11, Maven 3.6, Docker 18
 
         java -jar target/pseudo-api-1.0-SNAPSHOT.jar  
 
-By default the RESTful API runs at port <code>8082</code>
+By default, the RESTful API runs at port <code>8082</code>
     
   - Now, you can start consuming the Pseudonymization service at:
   
@@ -50,7 +50,7 @@ Example:
        
 The above API call will create a <i>session</i> and return HTTP-status code 201 <i>(if successful)</i>.
 
-More information about the resources and endpoint can be found in the <a href="#">API Documentation</a>.
+More information about the resources and endpoints can be found in the <a href="#">API Documentation</a>.
 
 
 ## Docker Implementation
