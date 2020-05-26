@@ -1,25 +1,15 @@
-version: '3.7'
-
+version: "3.1"
 services:
-  #Mainzellsite DB
-  mainzelliste-db:
+  db:
     image: postgres:9.5-alpine
-    container_name: mainzelliste-db
-    networks:
-      - pseudo-network
     environment:
       - POSTGRES_DB=mainzelliste
       - POSTGRES_USER=mainzelliste
       - POSTGRES_PASSWORD=medickoeln2020
-
-    #Mainzelliste server
   mainzelliste:
     image: medicalinformatics/mainzelliste:1.8-latest
-    container_name: mainzelliste
     ports:
       - 8080:8080
-    networks:
-      - pseudo-network
     environment:
       - ML_REVERSEPROXY_FQDN=mainzelliste
       - ML_REVERSEPROXY_SSL=false
@@ -30,7 +20,4 @@ services:
       - ML_API_KEY=X3TVeiOPMjw3ZZrh5Y6ZAm76XhAv2wGg
       - ML_ALLOWEDREMOTEADDRESSES=0.0.0.0/0
     depends_on:
-        - mainzelliste-db
-
-networks:
-  pseudo-network:
+      - db
