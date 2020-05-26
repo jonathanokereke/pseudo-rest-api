@@ -42,15 +42,15 @@ By default the RESTful API runs at port <code>8082</code>
   - Now, you can start consuming the Pseudonymization service at:
   
   
-    http://localhost:8082/api/v2/pseudo-service/ {resource endpoint}
+        http://localhost:8082/api/v2/pseudo-service/ {resource endpoint}
     
 Example:
 
-    curl -X POST http://localhost:8082/api/v2/pseudo-service/sessions
+        curl -X POST http://localhost:8082/api/v2/pseudo-service/sessions
        
 The above API call will create a <i>session</i> and return HTTP-status code 201 <i>(if successful)</i>.
 
-More information about the resources and endpoint can be found on the API Documentation.
+More information about the resources and endpoint can be found in the <a href="#">API Documentation</a>.
 
 
 ## Docker Implementation
