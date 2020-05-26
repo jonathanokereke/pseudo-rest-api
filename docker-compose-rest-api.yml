@@ -1,0 +1,34 @@
+
+#restAPI DB
+pseudo-db:
+  image: mysql:8.0
+  container_name: pseudo-db
+  networks:
+    - pseudo-network
+  environment:
+    - MYSQL_ROOT_PASSWORD=medic2020
+    - MYSQL_DATABASE=pseudo_db
+    #- MYSQL_PASSWORD=medic2020
+    #- MYSQL_ONETIME_PASSWORD=true
+
+  volumes:
+    - /var/lib/mysql
+
+#Pseudo Service
+pseudo-service:
+  image:
+    jonathanokereke/pseudo-rest-api:1.8.2
+  container_name: pseudo-service
+  #build:
+  #  context: .
+  #  dockerfile: Dockerfile
+  ports:
+    - 8082:8082 # Forward the exposed port 8082 on the container to port 8082 on the host machine
+  networks:
+    - pseudo-network
+  restart: on-failure
+  depends_on:
+    - pseudo-db
+
+networks:
+  pseudo-network:
