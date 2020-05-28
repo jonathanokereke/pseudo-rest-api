@@ -25,6 +25,7 @@ public class Application {
         return builder.build();
     }
 
+    @Bean
     public Docket pseudoApi(){
 
         return new Docket(DocumentationType.SWAGGER_2)
